@@ -1,0 +1,102 @@
+#slider {
+        /* position: fixed; */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+        background-image: url('../images/slider.svg');
+        background-size: cover;
+        background-position: center;
+}
+
+#sub_tagline {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 31.2105263158vh;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #000000;
+}
+
+#tagline {
+        width: 100%;
+        text-align: center;
+}
+
+#tagline p:first-child {
+        position: relative;
+        top: 38.4736842105vh;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 27px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #000000;
+}
+
+#tagline p:last-child {
+        position: relative;
+        top: 38.3684210526vh;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 100px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0px 0px 20px #000000;
+}
+#btn{
+        width: 100%;
+        text-align: center;
+}
+#btn button {
+        position: relative;
+        top: 40vh;
+        max-width: 143px;
+        min-width: 143px;
+        height: 43px;
+        background: #E24E69;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 0px;
+        cursor: pointer;
+}
+span {
+        font-size: 40px;
+        color: #FFFFFF;
+}
+
+
+
+
+@media (max-width: 864px) {
+        #tagline p:first-child {
+                font-size: 30px;
+        }
+
+        #tagline p:last-child {
+                font-size: 30px;
+        }
+}
+@media (max-width: 600px) {
+        #tagline p:first-child {
+                line-height: 45px;
+                font-size: 24px;
+        }
+        #tagline p:last-child {
+                line-height: 45px;
+                font-size: 24px;
+        }
+}

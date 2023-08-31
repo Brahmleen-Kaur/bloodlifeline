@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  color: var(--black);
+}
+
+:root {
+  --red: #e14e69;
+  --lightred: #fdf1f3;
+  --black: #2b2c2c;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+/* this css for the error messege  */
+.error {
+  margin: 1rem 0;
+  color: red;
+}
+.message {
+  background: #e14e69;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 13px;
+  margin-bottom: 1rem;
+}
+
+.margin-right-10
+{
+  margin-right: 10px;
+}

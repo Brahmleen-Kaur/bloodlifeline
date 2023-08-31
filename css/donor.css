@@ -1,0 +1,254 @@
+.donor {
+    margin: 2% 4%;
+}
+
+.donor h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.donor p {
+    color: rgba(100, 116, 139, 1);
+    margin-bottom: 20px;
+}
+
+.headline {
+    background-color: var(--yellow);
+}
+
+table {
+    /* border: 1px solid #ccc; */
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1em;
+    margin: 0.5em 0 0.75em;
+}
+
+table tr {
+    /* background-color: #f8f8f8; */
+    border-bottom: 1px solid #ddd;
+    padding: 0.35em;
+}
+
+table th,
+table td,
+.btn-box {
+    padding: 0.1em;
+    text-align: center;
+    /* border: 1px solid #ddd; */
+    /* overflow-x: hidden; */
+    word-wrap: break-word;
+}
+
+.blood_group {
+    background-color: rgba(253, 241, 243, 1);
+    color: #E24E69 !important;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+table th {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(100, 116, 139, 1);
+    line-height: 60px;
+}
+
+.search_box {
+    background-color: #F7F8F9;
+    border-radius: 5px;
+    padding: 15px 25px;
+
+}
+
+.search {
+    display: inline-block;
+}
+
+.search form {
+    background-color: #ffffff;
+    width: 400px;
+    height: 37px;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search input {
+    all: unset;
+    font: 16px system-ui;
+    color: #000000;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+.search ::placeholder {
+    color: #000000;
+    opacity: 0.7;
+}
+
+.search svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+.search button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+.filter {
+    background-color: #fff;
+    padding: 6px 20px;
+    color: rgba(100, 116, 139, 1);
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+.filter button {
+    all: unset;
+    cursor: pointer;
+}
+.filter_box{
+    display: none;
+    position: absolute;
+    background-color: #fdf1f3;
+    z-index: 1;
+    left: 0;
+    top: 35px;
+}
+.filter_box ul li{
+    list-style: none;
+    color: #E24E69;
+    padding: 7px 35px;
+    
+}
+.filter_box ul li:hover {
+    background-color: #E24E69 !important;
+    color: #000000;
+}
+
+.next_page{
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #ddd;;
+    border-radius: 10px;
+    
+}
+.next_page .next, .number, .previous{
+    width: auto;
+}
+.number
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number i{
+    margin: 0 10px;
+}
+.next_page .next {
+    margin-right: 1rem;
+}
+.next button, .previous button{
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.previous{
+    text-align: end;
+}
+@media (max-width: 900px) {
+    table {
+        border: 0;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+        padding: 10px 0;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    .blood_group {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:600px) {
+    .next_page{
+        width: 90%;   
+    }
+    .number i{
+        margin: 0 5px;
+    }
+    .next button, .previous button{
+        padding: 10px 10px;
+    }
+    .search form {
+        width: 200px;
+    }
+    .search_box {
+        padding: 15px 9px;
+    }
+}
+@media(max-width:400px) {
+    .search form {
+        width: 150px;
+    }
+}

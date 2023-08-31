@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;450;500;600;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a865f27d9f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <title>Navigation Bar</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <div class="site-header__start">
+                <img src="../images/logo.svg" alt="">
+                <p>Heamo</p>
+                <p>Donors</p>
+            </div>
+            <div class="site-header__middle">
+                <nav class="nav">
+                    <i class="nav__toggle fa-solid fa-bars fa-xl"></i>
+                    <ul class="nav__wrapper">
+                        <li class="nav__item"><a href="./index.html">Home</a></li>
+                        <li class="nav__item"><a href="./donor.html">Find Donors</a></li>
+                        <li class="nav__item"><a href="#blogs">Blog</a></li>
+                        <li class="nav__item"><a href="#main">About us</a></li>
+                        <li class="nav__item"><a href="#">Contact</a></li>
+                        <li class="nav_btns">
+                            <a href="./sign_in.html"><button type="button">Sign
+                                    in</button></a>
+                            <a href="./register.html"><button type="button">Register as a
+                                    donor</button></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="register">
+        <div class="register_box">
+            <h3>Register as a Blood Donor </h3>
+            <p>Personal Details</p>
+            <div class="register_first_container">
+                <div class="input_box">
+                    <label for="">First Name</label>
+                    <input type="text" name="name" id="" placeholder="Enter your first name">
+                </div>
+                <div class="input_box">
+                    <label for="">Last Name</label>
+                    <input type="text" name="name" id="" placeholder="Enter your last name">
+                </div>
+                <div class="input_box">
+                    <label for="">Date of Birth</label>
+                    <input type="date" name="name" id="" placeholder="dd/mm/yy">
+                </div>
+            </div>
+            <div class="register_first_container">
+                <div class="input_box">
+                    <label for="">Email</label>
+                    <input type="text" name="name" id="" placeholder="Enter your email">
+                </div>
+                <div class="input_box">
+                    <label for="">Mobile Number</label>
+                    <input type="text" name="name" id="" placeholder="Enter your mobile number">
+                </div>
+                <div class="input_box">
+                    <label for="">Gender</label>
+                    <select id="fruitSelect">
+                        <option value="apple">Male</option>
+                        <option value="banana">Female</option>
+                        <option value="banana">Other</option>
+                    </select>
+                </div>
+            </div>
+            <p class="medical_detail">Medical Details</p>
+            <div class="register_first_container">
+                <div class="input_box">
+                    <label for="">Blood Group</label>
+                    <input type="text" name="name" id="" placeholder="Enter your blood group">
+                </div>
+                <div class="input_box">
+                    <label for="">Ever Donated Blood Before</label>
+                    <input type="text" name="name" id="" placeholder="yes / no">
+                </div>
+                <!-- show field if yes otherwise make it disabled -->
+                <div class="input_box">
+                    <label for="">Blood Donated on</label>
+                    <input type="date" name="name" id="" placeholder="month/year">
+                </div>
+            </div>
+            <div class="register_first_container">
+                <div class="input_box">
+                    <label for="">Any Skin diease</label>
+                    <select id="fruitSelect">
+                        <option value="apple">No</option>
+                        <option value="banana">Yes</option>
+                    </select>
+                </div>
+                <div class="input_box">
+                    <label for="">Any Tattoo</label>
+                    <select id="fruitSelect">
+                        <option value="apple">No</option>
+                        <option value="banana">Yes</option>
+                    </select>
+                </div>
+                <div class="input_box">
+                    <label for="">Date of Getting Inked</label>
+                    <input type="date" name="name" id="" placeholder="month/year">
+                </div>
+            </div>
+            <button class="btns" type="button">Register</button>
+        </div>
+    </div>
+
+    <script>
+        let navToggle = document.querySelector(".nav__toggle");
+        let navWrapper = document.querySelector(".nav__wrapper");
+
+        navToggle.addEventListener("click", function () {
+            if (navWrapper.classList.contains("active")) {
+                this.setAttribute("aria-expanded", "false");
+                this.setAttribute("aria-label", "menu");
+                navWrapper.classList.remove("active");
+            } else {
+                navWrapper.classList.add("active");
+                this.setAttribute("aria-label", "close menu");
+                this.setAttribute("aria-expanded", "true");
+            }
+        });
+
+    </script>
+</body>
+
+</html>

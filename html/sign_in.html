@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;450;500;600;900&display=swap"
+                rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a865f27d9f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/sign_in.css">
+        <link rel="stylesheet" href="../css/slider.css">
+        <title>Navigation Bar</title>
+</head>
+
+<body>
+        <header class="site-header">
+                <div class="wrapper site-header__wrapper">
+                        <div class="site-header__start">
+                                <img src="../images/logo.svg" alt="">
+                                <p>Heamo</p>
+                                <p>Donors</p>
+                        </div>
+                        <div class="site-header__middle">
+                                <nav class="nav">
+                                        <!-- <button class="" aria-expanded="false" type="button"> -->
+                                        <i class="nav__toggle fa-solid fa-bars fa-xl"></i>
+                                        <!-- </button> -->
+                                        <ul class="nav__wrapper">
+                                                <li class="nav__item"><a href="./index.html">Home</a></li>
+                                                <li class="nav__item"><a href="./donor.html">Find Donors</a></li>
+                                                <li class="nav__item"><a href="#blogs">Blog</a></li>
+                                                <li class="nav__item"><a href="#main">About us</a></li>
+                                                <li class="nav__item"><a href="#">Contact</a></li>
+                                                <li class="nav_btns">
+                                                        <a href="./sign_in.html"><button type="button" class="white-btn">Sign
+                                                                        in</button></a>
+                                                        <a href="./register.html"><button type="button">Register as a
+                                                                        donor</button></a>
+                                                </li>
+                                        </ul>
+                                </nav>
+                        </div>
+                </div>
+        </header>
+
+        <div class="sign_in">
+                <div class="sign_in_container">
+                        <div class="sign_in_img">
+                                <img src="../images/men and women.png" alt="" srcset="">
+                        </div>
+                        <div class="sign_in_input_field">
+                                <h1>Welcome back!</h1>
+                                <p>Clarity gives you the blocks and components you need to create a truly professional
+                                        website.</p>
+                                <form action="">
+                                        <label class="email" for="">Email address</label>
+                                        <input type="email" name="email" placeholder="email, phone, or username" id="">
+                                        <label class="password" for="">Password</label>
+                                        <input type="password" name="password" placeholder="password" id="">
+                                        <div>
+                                                <input type="checkbox" name="" id="">
+                                                <label class="remember" for="">Remember me</label>
+                                                <label class="forgot_password">Forgot Password</label>
+                                        </div>
+                                        <button class="btns" type="button">Sign in</button>
+
+                                        <p>Don't have an account? <span>Create free account</span></p>
+                                </form>
+                        </div>
+                </div>
+        </div>
+
+        <script>
+                let navToggle = document.querySelector(".nav__toggle");
+                let navWrapper = document.querySelector(".nav__wrapper");
+
+                navToggle.addEventListener("click", function () {
+                        if (navWrapper.classList.contains("active")) {
+                                this.setAttribute("aria-expanded", "false");
+                                this.setAttribute("aria-label", "menu");
+                                navWrapper.classList.remove("active");
+                        } else {
+                                navWrapper.classList.add("active");
+                                this.setAttribute("aria-label", "close menu");
+                                this.setAttribute("aria-expanded", "true");
+                        }
+                });
+
+        </script>
+</body>
+
+</html>

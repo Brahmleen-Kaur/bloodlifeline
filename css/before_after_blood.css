@@ -1,0 +1,77 @@
+.before_after_blood {
+    padding: 20px 10%;
+}
+
+.before {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.before_img {
+    margin: 0 auto 0 auto;
+}
+
+.before h1,
+.after h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.before_text {
+    flex-grow: 0.4;
+}
+
+.before_text ul,
+.after_text ul {
+    padding-left: 20px;
+    line-height: 50px;
+    text-align: left;
+}
+
+.before_text ul li::marker,
+.after_text ul li::marker {
+    color: #00A19B;
+    font-size: 15px;
+}
+
+.after {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.after_text {
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+}
+
+.after_img {
+    flex-grow: 0.4;
+}
+
+@media(max-width:1108px) {
+    .before_after_blood {
+        text-align: center;
+    }
+}
+
+@media(max-width:778px) {
+    .before_after_blood{
+        display: none !important;
+    }
+    .before_text ul,
+    .after_text ul {
+        padding-left: 20px;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .before {
+        flex-direction: column-reverse;
+    }
+}
